@@ -1,6 +1,6 @@
 package com.damahou.day01.manager.entry;
 
-import com.damahou.day01.manager.controller.StudentController;
+import com.damahou.day01.manager.controller.OtherStudentController;
 import com.damahou.day01.manager.controller.TeacherController;
 
 import java.util.Scanner;
@@ -26,7 +26,8 @@ public class InfoManagerEntry {
             switch (choice) {
                 case "1":
                     System.out.println("学生管理");
-                    StudentController smc = new StudentController();
+                    // StudentController smc = new StudentController();
+                    OtherStudentController smc = new OtherStudentController();
                     // 开启学生管理系统
                     smc.start();
                     break;

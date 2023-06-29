@@ -15,8 +15,7 @@ import java.util.Scanner;
  * @ModifyDate
  * @Version 1.0
  */
-public class StudentController extends BaseStudentController {
-
+public class OtherStudentController extends BaseStudentController {
     /**
      * 输入学生信息
      *
@@ -26,17 +25,13 @@ public class StudentController extends BaseStudentController {
      */
     @Override
     public Student inputStudentInfo(Scanner scanner, String id) {
-        Student student = new Student();
-        student.setId(id);
         System.out.println("请输入学生姓名：");
         String name = scanner.next();
-        student.setName(name.trim());
         System.out.println("请输入学生年龄：");
         String age = scanner.next();
-        student.setAge(age);
         System.out.println("请输入学生生日：");
         String birthday = scanner.next();
-        student.setBirthday(birthday);
+        Student student = new Student(id, name.trim(), age, birthday);
         return student;
     }
 }
