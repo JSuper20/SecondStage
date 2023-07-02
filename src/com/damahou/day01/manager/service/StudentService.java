@@ -1,6 +1,6 @@
 package com.damahou.day01.manager.service;
 
-import com.damahou.day01.manager.dao.StudentDao;
+import com.damahou.day01.manager.dao.OtherStudentDao;
 import com.damahou.day01.manager.domain.Student;
 
 /**
@@ -18,7 +18,8 @@ public class StudentService {
     /**
      * studentDao
      */
-    private StudentDao studentDao = new StudentDao();
+    // private StudentDao studentDao = new StudentDao();
+    private OtherStudentDao studentDao = new OtherStudentDao();
 
     /**
      * 添加学生

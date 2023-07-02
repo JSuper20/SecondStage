@@ -1,20 +1,19 @@
-package com.damahou.day02.extend;
+package com.damahou.day03.inters;
 
 /**
  * @Program SecondStage
  * @ClassName Fu
- * @Package com.damahou.day02.abstractTest
+ * @Package com.damahou.day03.inters
  * @Description Fu
  * @Author DaMaHou
- * @CreateDate 2023-06-29 22:16
+ * @CreateDate 2023-07-02 16:30
  * @ModifyBy
  * @ModifyDate
  * @Version 1.0
  */
 public class Fu {
-    int a = 10;
 
     public void show() {
-        System.out.println("父类show方法");
+        System.out.println("fu …… show");
     }
 }

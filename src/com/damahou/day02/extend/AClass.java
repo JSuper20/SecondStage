@@ -3,7 +3,7 @@ package com.damahou.day02.extend;
 /**
  * @Program SecondStage
  * @ClassName AClass
- * @Package com.damahou.day02.extend
+ * @Package com.damahou.day02.abstractTest
  * @Description AClass
  * @Author DaMaHou
  * @CreateDate 2023-06-29 22:06

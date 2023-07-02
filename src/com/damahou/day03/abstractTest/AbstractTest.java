@@ -1,4 +1,4 @@
-package com.damahou.day03;
+package com.damahou.day03.abstractTest;
 
 /**
  * @Program SecondStage

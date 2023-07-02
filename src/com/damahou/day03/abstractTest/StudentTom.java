@@ -1,4 +1,6 @@
-package com.damahou.day03;
+package com.damahou.day03.abstractTest;
+
+import com.damahou.day03.abstractTest.CompositionTemplate;
 
 /**
  * @Program SecondStage
