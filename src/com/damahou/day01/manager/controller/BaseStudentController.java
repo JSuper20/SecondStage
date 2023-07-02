@@ -16,13 +16,13 @@ import java.util.Scanner;
  * @ModifyDate
  * @Version 1.0
  */
-public class BaseStudentController {
+public abstract class BaseStudentController {
     /**
      * studentService
      */
-    private StudentService studentService = new StudentService();
+    private final StudentService studentService = new StudentService();
 
-    public void start() {
+    public final void start() {
         Scanner scanner = new Scanner(System.in);
         studentLoop:
         while (true) {
@@ -59,7 +59,7 @@ public class BaseStudentController {
     /**
      * 修改学生信息
      */
-    public void updateStudent() {
+    public final void updateStudent() {
         System.out.println("请输入待修改学生的id：");
         Scanner scanner = new Scanner(System.in);
         String id = getExistsId();
@@ -92,7 +92,7 @@ public class BaseStudentController {
     /**
      * 删除用户
      */
-    public void delStudent() {
+    public final void delStudent() {
         System.out.println("请输入需要删除用户的id：");
         Scanner scanner = new Scanner(System.in);
         String id = getExistsId();
@@ -113,7 +113,7 @@ public class BaseStudentController {
     /**
      * 查询所有学生信息
      */
-    public void queryAllStudents() {
+    public final void queryAllStudents() {
         Student[] stus = studentService.queryAllStudents();
         // System.out.println("学生信息为：" + Arrays.toString(stus));
         if (stus == null) {
@@ -131,7 +131,7 @@ public class BaseStudentController {
     /**
      * 添加学生
      */
-    public void addStudent() {
+    public final void addStudent() {
         Scanner scanner = new Scanner(System.in);
         // Teacher student = new Teacher();
         String id;
@@ -168,7 +168,5 @@ public class BaseStudentController {
      * @param id      id
      * @return Teacher
      */
-    public Student inputStudentInfo(Scanner scanner, String id) {
-        return null;
-    }
+    public abstract Student inputStudentInfo(Scanner scanner, String id);
 }

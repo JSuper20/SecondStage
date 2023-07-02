@@ -22,7 +22,7 @@ public class TeacherController {
     /**
      * teacherService
      */
-    private TeacherService teacherService = new TeacherService();
+    private final TeacherService teacherService = new TeacherService();
 
     /**
      * 开始老师管理
