@@ -17,6 +17,14 @@ public class StudentDao {
     // 创建学生对象数组
     private static Student[] stuArray = new Student[5];
 
+    static {
+        Student s1 = new Student("001", "ZhangSan", "25", "2001-01-01");
+        Student s2 = new Student("002", "ZhangSanFeng", "45", "1978-01-01");
+
+        stuArray[0] = s1;
+        stuArray[1] = s2;
+    }
+
     /**
      * 添加学生
      *
