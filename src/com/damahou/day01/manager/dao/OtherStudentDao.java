@@ -16,7 +16,7 @@ import java.util.List;
  * @ModifyDate
  * @Version 1.0
  */
-public class OtherStudentDao implements StudentInterface {
+public class OtherStudentDao implements BaseStudentInterface {
     // 创建学生集合
     private static List<Student> stuList = new ArrayList<>();
 

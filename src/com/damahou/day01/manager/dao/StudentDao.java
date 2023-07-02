@@ -13,7 +13,7 @@ import com.damahou.day01.manager.domain.Student;
  * @ModifyDate
  * @Version 1.0
  */
-public class StudentDao implements StudentInterface {
+public class StudentDao implements BaseStudentInterface {
     // 创建学生对象数组
     private static Student[] stuArray = new Student[5];
 

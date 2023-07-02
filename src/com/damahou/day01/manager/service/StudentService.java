@@ -1,7 +1,8 @@
 package com.damahou.day01.manager.service;
 
-import com.damahou.day01.manager.dao.OtherStudentDao;
+import com.damahou.day01.manager.dao.BaseStudentInterface;
 import com.damahou.day01.manager.domain.Student;
+import com.damahou.day01.manager.factory.StudentDaoFactory;
 
 /**
  * @Program SecondStage
@@ -19,7 +20,11 @@ public class StudentService {
      * studentDao
      */
     // private StudentDao studentDao = new StudentDao();
-    private OtherStudentDao studentDao = new OtherStudentDao();
+    // private OtherStudentDao studentDao = new OtherStudentDao();
+    /**
+     * 通过学生库管工厂类, 获取库管对象
+     */
+    private BaseStudentInterface studentDao = StudentDaoFactory.getStudentDao();
 
     /**
      * 添加学生
