@@ -21,6 +21,10 @@ public class InnerTest {
         inner.print();
         inner.method();
         System.out.println(inner.c);
+        System.out.println("---------------");
+
+        Outer outer = new Outer();
+        outer.show();
     }
 }
 
@@ -34,6 +38,10 @@ class Outer {
     private int b = 20;
 
     public void show() {
+        Inner inner = new Inner();
+        int num = inner.c;
+        System.out.println(num);
+        inner.print();
         System.out.println("外部类的show");
     }
 
@@ -45,9 +53,11 @@ class Outer {
          * 内部类可以直接访问外部类的成员变量与成员方法
          */
         public void print() {
+            System.out.println("内部类的输出=========开始");
             System.out.println("a = " + a);
             System.out.println("b = " + b);
             System.out.println("c = " + c);
+            System.out.println("内部类的输出=========结束");
         }
 
         public void method() {
