@@ -24,6 +24,8 @@ public class LambdaDemo01 {
         goSwimming(() -> {
             System.out.println("走，游泳搞起");
         });
+
+        goSwimming(() -> System.out.println("走，游泳搞起"));
     }
 
     public static void goSwimming(Swimmings swimmings) {
